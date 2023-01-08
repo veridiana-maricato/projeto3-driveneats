@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>DrivenEats</h1>
+            <h3>Sua comida em 6 minutos</h3>
+        </header>
+        <main>
+            <h1>Primeiro, seu prato</h1>
+            <div class="meals">
+                <div class="meal food" data-test="dish">
+                    <div class="meal-img">
+                        <img src="../src/assets/img/nada.jpg" alt="Frango">
+                    </div>
+                    <h2 data-test="item-name">Nenhum</h2>
+                    <p>Não quero uma refeição, obrigada.</p>
+                    <h3 data-test="item-price">R$ 0</h3>
+                </div>
+                <div id="meal1" class="meal food" data-test="dish">
+                    <div class="meal-img">
+                        <img src="../src/assets/img/frango_yin_yang.png" alt="Frango">
+                    </div>
+
+                    <h2 data-test="item-name">Frango Yin Yang</h2>
+                    <p>Um pouco de batata, um pouco de salada</p>
+                    <h3 data-test="item-price">R$ 14,90</h3>
+                </div>
+                <div id="meal2" class="meal food" data-test="dish">
+                    <div class="meal-img">
+                        <img src="../src/assets/img/frango_yin_yang.png" alt="Frango">
+                    </div>
+                    <h2 data-test="item-name">Frango Yin Yang</h2>
+                    <p>Um pouco de batata, um pouco de salada</p>
+                    <h3 data-test="item-price">R$ 14,90</h3>
+                </div>
+                <div id="meal3" class="meal food">
+                    <div class="meal-img">
+                        <img src="../src/assets/img/frango_yin_yang.png" alt="Frango">
+                    </div>
+                    <h2 data-test="item-name">Frango Yin Yang</h2>
+                    <p>Um pouco de batata, um pouco de salada</p>
+                    <h3 data-test="item-price">R$ 14,90</h3>
+                </div>
+            </div>
+            <h1>Agora, sua bebida</h1>
+            <div class="meals">
+                <div class="meal beverage" data-test="drink">
+                    <div class="meal-img">
+                        <img src="../src/assets/img/nada.jpg" alt="Frango">
+                    </div>
+                    <h2 data-test="item-name">Nenhum</h2>
+                    <p>Não quero uma bebida, obrigada.</p>
+                    <h3 data-test="item-price">R$ 0</h3>
+                </div>
+                <div class="meal beverage" data-test="drink">
+                    <div class="meal-img">
+                        <img src="../src/assets/img/coca-cola.png" alt="coca-cola">
+                    </div>
+                    <h2 data-test="item-name">Coquinha gelada</h2>
+                    <p>Lata 350ml</p>
+                    <h3 data-test="item-price">R$ 4,90</h3>
+                </div>
+                <div class="meal beverage" data-test="drink">
+                    <div class="meal-img">
+                        <img src="../src/assets/img/coca-cola.png" alt="coca-cola">
+                    </div>
+                    <h2 data-test="item-name">Coquinha gelada</h2>
+                    <p>Lata 350ml</p>
+                    <h3 data-test="item-price">R$ 4,90</h3>
+                </div>
+                <div class="meal beverage" data-test="drink">
+                    <div class="meal-img">
+                        <img src="../src/assets/img/coca-cola.png" alt="coca-cola">
+                    </div>
+                    <h2 data-test="item-name">Coquinha gelada</h2>
+                    <p>Lata 350ml</p>
+                    <h3 data-test="item-price">R$ 4,90</h3>
+                </div>
+
+            </div>
+            <h1>Por fim, sua sobremesa</h1>
+            <div class="meals">
+                <div class="meal dessert" data-test="dessert">
+                    <div class="meal-img">
+                        <img src="../src/assets/img/nada.jpg" alt="Frango">
+                    </div>
+                    <h2 data-test="item-name">Nenhum</h2>
+                    <p>Não quero uma sobremesa, obrigada.</p>
+                    <h3 data-test="item-price">R$ 0</h3>
+                </div>
+                <div class="meal dessert" data-test="dessert">
+                    <div class="meal-img">
+                        <img src="../src/assets/img/pudim.png" alt="Pudim">
+                    </div>
+                    <h2 data-test="item-name">Pudim</h2>
+                    <p>Apenas pudim</p>
+                    <h3 data-test="item-price">R$ 7,90</h3>
+                </div>
+                <div class="meal dessert" data-test="dessert">
+                    <div class="meal-img">
+                        <img src="../src/assets/img/pudim.png" alt="Pudim">
+                    </div>
+                    <h2 data-test="item-name">Pudim</h2>
+                    <p>Apenas pudim</p>
+                    <h3 data-test="item-price">R$ 7,90</h3>
+                </div>
+                <div class="meal dessert" data-test="dessert">
+                    <div class="meal-img">
+                        <img src="../src/assets/img/pudim.png" alt="Pudim">
+                    </div>
+                    <h2 data-test="item-name">Pudim</h2>
+                    <p>Apenas pudim</p>
+                    <h3 data-test="item-price">R$ 7,90</h3>
+                </div>
+            </div>
+        </main>
+        <div class="button-container">
+            <button class="select-button" disabled=true data-test="order-btn">
+                Selecione os 3 itens para fechar o pedido
+            </button>
+        </div>
+    </div>
+    <div data-test="confirm-order-modal" class="confirm-order hidden">
+        <h1>Confirme seu pedido</h1>
+        <table>
+            <tr>
+                <td class="chosen-food">food</td>
+                <td class="chosen-food-price">0</td>
+            </tr>
+            <tr>
+                <td class="chosen-beverage">beverage</td>
+                <td class="chosen-beverage-price">0</td>
+            </tr>
+            <tr>
+                <td class="chosen-dessert">dessert</td>
+                <td class="chosen-dessert-price">0</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="total">TOTAL</p>
+                </td>
+                <td>
+                    <p class="total total-div">R$</p>
+                </td>
+            </tr>
+        </table>
+        <div class="buttons">
+            <button id="confirm-order-btn" data-test="confirm-order-btn" class="all-good-button">Tudo certo,
+                pode pedir!</button>
+            <button data-test="cancel-order-btn" class="cancel-button">Cancelar</button>
+        </div>
+    </div>
+    <script src="./assets/js/bundle.js"></script>
+</body>
+
+</html>
